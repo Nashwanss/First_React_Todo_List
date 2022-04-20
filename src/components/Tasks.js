@@ -1,19 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Tasks = () => {
-  const todos = ["Learn React", "Be Awesome !", "Do Something here or there"];
+export default function Tasks() {
+  const initialTodos = [
+    "Learn React",
+    "Be Awesome !",
+    "Do Something here or there",
+    "Another task",
+    "Another task",
+    "Another task",
+  ];
+  const [todos, setTodos] = useState(initialTodos);
+
   return (
-    <div className="tasks">
-      <label>Tasks</label>
+    <>
+      <label> To Do </label>
       <ul>
         {todos.map((todo) => (
           <li>
-            <input type="checkbox" /> {todo}
+            <input type="checkbox" key={todo.toString()} /> {todo}
           </li>
         ))}
       </ul>
-    </div>
+      <h5> {todos.length} Tasks need to be done soon =D</h5>
+    </>
   );
-};
-
-export default Tasks;
+}

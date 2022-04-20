@@ -8,7 +8,7 @@ import Tasks from "./components/Tasks";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <header className="App-header">
         <Title />
         <Logo />
@@ -16,10 +16,10 @@ function App() {
       <section className="inputs">
         <Inputs />
       </section>
-      <div className="tasks">
+      <section className="tasks">
         <Tasks />
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 

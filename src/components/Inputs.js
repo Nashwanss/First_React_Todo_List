@@ -1,8 +1,8 @@
 import React from "react";
 
-const Inputs = () => {
+export default function Inputs() {
   return (
-    <div>
+    <>
       <input
         className="input-field"
         type="text"
@@ -12,8 +12,6 @@ const Inputs = () => {
       <br />
 
       <button className="add-btn">Add Todo</button>
-    </div>
+    </>
   );
-};
-
-export default Inputs;
+}

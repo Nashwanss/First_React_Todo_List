@@ -5,3 +5,7 @@
     font-size: 22px;
 }
 
+li {
+    color: rgb(61, 183, 199);
+    list-style-type: none;
+}
