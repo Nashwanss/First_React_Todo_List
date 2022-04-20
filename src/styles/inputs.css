@@ -1,0 +1,19 @@
+.input-field {
+    border: none;
+    border-bottom: 2px solid rgb(231, 213, 213);
+    width: 50%;
+    height: 50px;
+}
+
+.add-btn {
+        background-color: rgb(61, 183, 199);
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
