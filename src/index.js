@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./styles/title.css";
 import "./styles/logo.css";
-import "./styles/inputs.css";
-import "./styles/tasks.css";
+import "./styles/form.css";
+import "./styles/todoList.css";
 
 // FROM LIBRARY: ReactDOM =>  METHOD  : render (WHAT => RECALL OF THE FUNCTION CALLED App :  <App />, WHERE =>  document.getElementById("root"));
 // ReactDOM.render(<App />, document.getElementById("root"));

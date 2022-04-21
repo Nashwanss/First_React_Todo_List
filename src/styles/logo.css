@@ -16,6 +16,8 @@
 .logo {
   border : none;
   pointer-events: none;
-  /* animation: App-logo-spin infinite 20s linear;
-  pointer-events: none; */
-      }
+  width: 70px;
+  height: 70px;
+}
+
+

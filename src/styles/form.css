@@ -3,9 +3,10 @@
     border-bottom: 2px solid rgb(231, 213, 213);
     width: 50%;
     height: 50px;
+    font-size: 16px;
 }
 
-.add-btn {
+.btn-add {
         background-color: rgb(61, 183, 199);
         border: none;
         color: white;
