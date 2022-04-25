@@ -1,11 +1,13 @@
-.tasks {
-    height: 200px;
-    width: 100%;
-    background-color: rgb(221, 238, 235);
-    font-size: 22px;
-}
 
 li {
     color: rgb(61, 183, 199);
     list-style-type: none;
+}
+
+.todoList-container {
+    height: 200px;
+    width: 100%;
+    font-size: calc(10px + 2vmin);
+    font-size: 22px;
+    background-color: rgb(221, 238, 235);
 }

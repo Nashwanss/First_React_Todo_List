@@ -1,0 +1,38 @@
+.header-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: calc(10px + 2vmin);
+    background-color: rgb(221, 238, 235);
+}
+
+.title{
+    color: rgb(61, 183, 199);
+    font-size: 50px;
+}
+
+
+.logo {
+  border : none;
+  pointer-events: none;
+  width: 70px;
+  height: 70px;
+  animation: App-logo-spin infinite 20s linear;
+}
+
+
+
+
+
+
+/* 
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
