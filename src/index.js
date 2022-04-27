@@ -1,10 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import App from "./App";
-import "./styles/header.css";
-import "./styles/form.css";
-import "./styles/todoList.css";
 
 // FROM LIBRARY: ReactDOM =>  METHOD  : render (WHAT => RECALL OF THE FUNCTION CALLED App :  <App />, WHERE =>  document.getElementById("root"));
 // ReactDOM.render(<App />, document.getElementById("root"));

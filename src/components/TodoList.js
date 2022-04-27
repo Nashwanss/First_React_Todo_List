@@ -1,16 +1,11 @@
 import React, { useState } from "react";
 
-export default function TodoList(task) {
+export default function TodoList(inputText, setInputText) {
   // const initialTodos = [];
+  console.log(inputText);
+  console.log(setInputText);
 
-  // const initialTodos = [
-  // "Learn React",
-  // "Learn Redux",
-  // "Learn React Router",
-  // "Learn React Hooks",
-  // "Learn React Context",
-  // "Learn React Redux",
-  // ];
+  // const initialTodos = ["test", "test2", "test3"];
 
   const initialTodos = [
     { id: 1, content: "Learn React", completed: false },
@@ -21,8 +16,21 @@ export default function TodoList(task) {
     { id: 6, content: "Learn Express", completed: false },
   ];
 
-  // const [todos, setTodos] = useState(initialTodos);
-  const [todos] = useState(initialTodos);
+  // at the beginning of our component:
+  // const [fruits, setFruits] = useState(["apples", "pears"]);
+
+  // later:
+  // const newFruits = [...fruits]; // ✅  we "shallow clone" the array
+  // newFruits.push("bananas"); // ✅  we add the item to the cloned array
+  // setFruits(newFruits); // ✅  we use the cloned array
+
+  const [todos, setTodos] = useState(initialTodos);
+
+  // setTodos(
+  //   ...(prevtodos) => {
+  //     return [...prevtodos, { id: 1, content: inputText, completed: false }];
+  //   }
+  // );
 
   const moreThan10 = todos.length > 10;
 
@@ -30,7 +38,7 @@ export default function TodoList(task) {
     <>
       <label> TO DO </label>
       <ul>
-        {todos.map((todo, index) => (
+        {todos.map((todo) => (
           <li key={todo.id}>
             <input type="checkbox" checked={todo.completed} /> {todo.content}
           </li>

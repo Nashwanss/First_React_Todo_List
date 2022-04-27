@@ -8,8 +8,9 @@ import "./styles/header.css";
 import "./styles/form.css";
 import "./styles/todoList.css";
 
-function App(todo) {
-  const [inputText, setInputText] = useState(" ");
+function App() {
+  const [inputText, setInputText] = useState(" "); // This is the state of Form.js
+  const [todos, setTodos] = useState([]); // This is the state of TodoList.js
   return (
     <>
       <header className="header-container">
@@ -19,7 +20,13 @@ function App(todo) {
         <Form setInputText={setInputText} />
       </section>
       <section className="todoList-container">
-        <TodoList task={todo} />
+        {/* <h3>Test {inputText}</h3> */}
+        <TodoList
+          inputText={inputText}
+          setInputText={setInputText}
+          todos={todos}
+          setTodos={setTodos}
+        />
       </section>
     </>
   );

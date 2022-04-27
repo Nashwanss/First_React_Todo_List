@@ -5,6 +5,7 @@ export default function Form({ setInputText }) {
   const inputRef = useRef();
 
   function clickHandler(event) {
+    //Prevent natural behaviour of the form
     event.preventDefault();
     // console.log("Clicked");
     const inputElement = inputRef.current.value;
@@ -12,12 +13,9 @@ export default function Form({ setInputText }) {
     console.log(inputElement);
     setInputText(inputElement);
 
-    // setTodos(
-    //   ...(prevtodos) => {
-    //     return [...prevtodos, { id: 1, content: content, completed: false }];
-    //   }
-    // );
+ 
 
+    //  To empty the input field once we click on the button
     inputRef.current.value = null;
   }
   return (
