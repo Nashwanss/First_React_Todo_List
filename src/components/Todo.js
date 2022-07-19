@@ -19,7 +19,6 @@ export default function Todo({ todo, toggleTodo, todos, setTodos }) {
           checked={todo.completed}
         />
         <button onClick={delelteHandler} className="btn-delete">
-          {" "}
           Delete
         </button>
         {todo.content}

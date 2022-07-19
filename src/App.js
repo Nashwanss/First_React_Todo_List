@@ -94,7 +94,10 @@ function App() {
   return (
     <>
       <Header />
-      <Form addNewTodo={addNewTodo} saveLocalTodos={saveLocalTodos} />
+      <Form 
+      addNewTodo={addNewTodo} 
+      saveLocalTodos={saveLocalTodos}
+      />
       <TodoList
         name={"Nashwan"}
         todos={todos}
@@ -106,8 +109,3 @@ function App() {
 }
 
 export default App;
-
-// BUGS in my code:
-
-// 1. LocalStorage does not work:
-// App.js line 55
